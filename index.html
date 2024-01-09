@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- Created by Concerate do not take this code. -->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>Random Number Generator</h1>
+<p>Guess a random number 1 - 1000. Each time you click the button below, the number will be different each time.</p>
+<h2>Random Number:</h2>
+<p id="randomNumber"></p>
+<button onclick="generateRandomNumber()">Generate Random Number</button>
+
+<script>
+function generateRandomNumber() {
+    var randomNumber = Math.floor(Math.random() * 1000);
+    document.getElementById("randomNumber").innerHTML = randomNumber;
+}
+</script>
+
+</body>
+</html>
