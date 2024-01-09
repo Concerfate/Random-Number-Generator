@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     color: #000;
     padding: 100px;
+    position: relative;
 }
 
 h1 {
@@ -38,4 +39,12 @@ button {
 button:hover {
     background-color: #6699cc;
     color: #1f3e6b;
+}
+
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
