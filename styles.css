@@ -42,10 +42,10 @@ button:hover {
 }
 
 #footer {
-    position: absolute;
+    position: static;
     right: 0;
     bottom: 0;
     margin-right: 10px;
     margin-bottom: 10px;
-    color: #B8B8B8;
+    color: #D9D9D6;
 }
