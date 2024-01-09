@@ -4,6 +4,11 @@ body {
     color: #000;
     padding: 100px;
     position: relative;
+    height: 100%;
+}
+
+#content {
+    padding-bottom: 50px; /* Adjust this value as needed */
 }
 
 h1 {
@@ -47,5 +52,4 @@ button:hover {
     bottom: 0;
     margin-right: 10px;
     margin-bottom: 10px;
-    color: #D9D9D6;
 }
