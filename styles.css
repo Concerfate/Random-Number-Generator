@@ -42,7 +42,7 @@ button:hover {
 }
 
 #footer {
-    position: static;
+    position: fixed;
     right: 0;
     bottom: 0;
     margin-right: 10px;
