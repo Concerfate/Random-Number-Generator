@@ -48,7 +48,9 @@ button:hover {
 }
 
 input[type=number] {
-    width: 300px;
+    width: 400px; /* Adjust this value to change the width */
+    height: 50px; /* Adjust this value to change the height */
+    font-size: 20px; /* Adjust this value to change the font size */
     padding: 5px;
     margin: 5px 0;
     box-sizing: border-box;
