@@ -5,7 +5,7 @@ body {
     padding: 100px;
     position: relative;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #content {
@@ -45,6 +45,15 @@ button {
 button:hover {
     background-color: #6699cc;
     color: #1f3e6b;
+}
+
+input[type=number] {
+    width: 60px;
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #1f3e6b;
+    border-radius: 4px;
 }
 
 #footer {
