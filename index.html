@@ -3,24 +3,22 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Random Number Generator</title>
-    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
 </head>
 <body>
 
-<div id="content">
-    <h1>Random Number Generator</h1>
-    <p>Guess a random number 1 - 1000. Each time you click the button below, the number will be different each time.</p>
-    <h2>Random Number:</h2>
-    <p id="randomNumber"></p>
-    <button onclick="generateRandomNumber()">Generate Random Number</button>
-</div>
-
-<div id="footer">Made by Concerfate</div>
+<h1>Random Number Generator</h1>
+<p>Guess a random number. Each time you click the button below, the number will be different each time.</p>
+<p>Minimum Number: <input type="number" id="minNumber" value="1"></p>
+<p>Maximum Number: <input type="number" id="maxNumber" value="1000"></p>
+<h2>Random Number:</h2>
+<p id="randomNumber"></p>
+<button onclick="generateRandomNumber()">Generate Random Number</button>
 
 <script>
 function generateRandomNumber() {
-    var randomNumber = Math.floor(Math.random() * 1000);
+    var min = document.getElementById("minNumber").value;
+    var max = document.getElementById("maxNumber").value;
+    var randomNumber = Math.floor(Math.random() * (max - min + 1)) + parseInt(min);
     document.getElementById("randomNumber").innerHTML = randomNumber;
 }
 </script>
