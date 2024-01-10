@@ -11,16 +11,22 @@
 <p>Guess a random number. Each time you click the button below, the number will be different each time.</p>
 <p>Minimum Number: <input type="number" id="minNumber" value="1"></p>
 <p>Maximum Number: <input type="number" id="maxNumber" value="1000"></p>
-<h2>Random Number:</h2>
-<p id="randomNumber"></p>
-<button onclick="generateRandomNumber()">Generate Random Number</button>
+<p>Number of Random Numbers: <input type="number" id="numNumbers" value="1"></p>
+<h2>Random Numbers:</h2>
+<p id="randomNumbers"></p>
+<button onclick="generateRandomNumbers()">Generate Random Numbers</button>
 
 <script>
-function generateRandomNumber() {
+function generateRandomNumbers() {
     var min = document.getElementById("minNumber").value;
     var max = document.getElementById("maxNumber").value;
-    var randomNumber = Math.floor(Math.random() * (max - min + 1)) + parseInt(min);
-    document.getElementById("randomNumber").innerHTML = randomNumber;
+    var num = document.getElementById("numNumbers").value;
+    var randomNumbers = "";
+    for (var i = 0; i < num; i++) {
+        var randomNumber = Math.floor(Math.random() * (max - min + 1)) + parseInt(min);
+        randomNumbers += randomNumber + "<br>";
+    }
+    document.getElementById("randomNumbers").innerHTML = randomNumbers;
 }
 </script>
 
